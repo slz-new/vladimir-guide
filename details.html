@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Золотые ворота — Подробная информация</title>
+    <title id="titletext">Золотые ворота — Подробная информация</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,49 +13,31 @@
             <a href="index.html" class="back-link">← Вернуться в каталог</a>
         </div>
     </header>
-    <main class="details-container">
-        <h2 class="details-title">Золотые ворота</h2>
-        <h6 class="placecategory">Архитектура</h6>
-        <div class="gallery">
-            <div class="main-image">
-                <img src="img/place1/1_1.png" alt="Золотые ворота — Фото 1">
+    <main class="details-container"></main>
+    <section class="add-review-section">
+        <h3>Оставить свой отзыв</h3>
+        <form id="review_form">
+            <div class="form-group">
+                <label for="review_author">Ваше имя:</label>
+                <input type="text" id="review_author" required placeholder="Введите ваше имя...">
             </div>
-            <div class="thumbnails">
-                <img src="img/place1/1_2.png" alt="Золотые ворота — Фото 2">
-                <img src="img/place1/1_3.png" alt="Золотые ворота — Фото 3">
+            <div class="form-group">
+                <label for="review_rating">Оценка:</label>
+                <select id="review_rating" required>
+                    <option value="5">★ 5</option>
+                    <option value="4">★ 4</option>
+                    <option value="3">★ 3</option>
+                    <option value="2">★ 2</option>
+                    <option value="1">★ 1</option>
+                </select>
             </div>
-        </div>
-        <section class="description-section">
-            <h3>История и описание</h3>
-            <p class="placedesc">Выдающийся памятник древнерусской военно-оборонительной архитектуры и монументального зодчества XII века, построенный в эпоху правления князя Андрея Боголюбского. Золотые ворота служили парадным въездом в самую богатую княжеско-боярскую часть города.</p>
-            <p class="placedate">Дата основания: 1164 г.</p>
-        </section>
-        <hr class="separator">
-        <section class="reviews-section">
-            <h3>Отзывы посетителей</h3>
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-author">Александр Е.</span>
-                    <span class="review-rating">★ 5.0</span>
-                </div>
-                <p class="review-text">Потрясающее монументальное сооружение. Внутри ворот расположен небольшой, но очень интересный военно-исторический музей с диорамой. Обязательно к посещению!</p>
+            <div class="form-group">
+                <label for="review_text">Отзыв:</label>
+                <textarea id="review_text" rows="4" required placeholder="Поделитесь своими впечатлениями..."></textarea>
             </div>
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-author">Мария К.</span>
-                    <span class="review-rating">★ 4.8</span>
-                </div>
-                <p class="review-text">Постойка завораживает своей древней историей. Очень красиво смотрится в вечернее время, когда включается подсветка. Рядом находится Козлов вал, оттуда открывается отличный вид</p>
-            </div>
-            <div class="review-card">
-                <div class="review-header">
-                    <span class="review-author">Дмитрий Т.</span>
-                    <span class="review-rating">★ 5.0</span>
-                </div>
-                <p class="review-text">Уникальное место, буквально прикасаешься к истории XII века. Белый камень выглядит величественно, вокруг все чисто и убрано</p>
-            </div>
-        </section>
-    </main>
-
+            <button type="submit" class="submit-review-btn">Отправить отзыв</button>
+        </form>
+    </section>
+    <script src="./scripts/details.js"></script>
 </body>
 </html>

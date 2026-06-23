@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titletext">Золотые ворота — Подробная информация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Онлайн-гид по Владимиру</h1>
+        <div class="controls">
+            <a href="index.html" class="back-link">← Вернуться в каталог</a>
+        </div>
+    </header>
+    <main class="details-container"></main>
+    <section class="add-review-section">
+        <h3>Оставить свой отзыв</h3>
+        <form id="review_form">
+            <div class="form-group">
+                <label for="review_author">Ваше имя:</label>
+                <input type="text" id="review_author" required placeholder="Введите ваше имя...">
+            </div>
+            <div class="form-group">
+                <label for="review_rating">Оценка:</label>
+                <select id="review_rating" required>
+                    <option value="5">★ 5</option>
+                    <option value="4">★ 4</option>
+                    <option value="3">★ 3</option>
+                    <option value="2">★ 2</option>
+                    <option value="1">★ 1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review_text">Отзыв:</label>
+                <textarea id="review_text" rows="4" required placeholder="Поделитесь своими впечатлениями..."></textarea>
+            </div>
+            <button type="submit" class="submit-review-btn">Отправить отзыв</button>
+        </form>
+    </section>
+    <script src="./scripts/details.js"></script>
+</body>
+</html>
